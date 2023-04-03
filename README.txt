@@ -4,7 +4,7 @@ A program to ingest image files with specific folder structures.
 
 Photographers often use Adobe Lightroom importing module to ingest photos from an external memory to a hard-drive. This program intends to do the same process a lot faster than Lightroom. 
 
-Since I'm no programmer, this small script lacks a lot of features, like ingesting every file in a SC card, despite the folder structures created by different brands of cameras. By now, you have to chose each folder you want to ingest.
+Since I'm no programmer, this small script lacks a lot of features, like ingesting every file in a SD card, despite the folder structures created by different brands of cameras. By now, you have to chose each folder you want to ingest.
 
 The script is supposed to ingest photo and video files, according to the extensions added in the program. By default, it works with .png, .jpg, .jpeg, .tiff, .bmp', .raw, .awr and .gif photo formats; and .mov and .mp4 video formats. It's easy to add new formats - there are indications where to add the code on the script. 
 
