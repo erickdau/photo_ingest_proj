@@ -46,7 +46,7 @@ for filename in os.listdir(origin):
     f = os.path.join(origin, filename)
 
     # Picture files (add extensions below as needed)
-    if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.raw', '.gif', '.arw')):
+    if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.raw', '.gif', '.arw', '.nef')):
 
         if not filename.startswith('.') and os.path.isfile(f):  # Ignore hidden
             # files and checks if filename is an actual file
