@@ -62,6 +62,7 @@ for filename in os.listdir(origin):
 
             # Copy files from origin to new directory
             shutil.copy(origin + '/' + filename, path + '/' + filename)
+            print(f"{path} / {filename} copied")
 
     # Video files (add extensions below as needed)
     elif filename.lower().endswith(('.mp4', '.mov')):
@@ -80,3 +81,4 @@ for filename in os.listdir(origin):
 
             # Copy files from origin to new directory
             shutil.copy(origin + '/' + filename, path + '/' + filename)
+            print(f"{path} / {filename} copied")
