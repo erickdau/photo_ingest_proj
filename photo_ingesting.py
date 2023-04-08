@@ -5,6 +5,10 @@ import exifread
 import datetime
 from folder_structure import folder_struc
 
+# Tkinter attempt to unify inputs in one window
+
+
+
 # MAIN SCRIPT
 choice = int(input("Chose the folder structure: \n"
                    "1. YYYY-MM-DD \n"
