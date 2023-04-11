@@ -2,7 +2,7 @@
 
 A program to ingest image files with specific folder structures. 
 
-Photographers often use Adobe Lightroom importing module to ingest photos from an external memory to a hard-drive. This program intends to do the same process a lot faster than Lightroom. 
+Photographers often use Adobe Lightroom importing module to ingest photos from an external memory to a hard-drive. This program intends to do the same process faster than Lightroom.
 
 Since I'm no programmer, this small script lacks a lot of features, like ingesting every file in a SD card, despite the folder structures created by different brands of cameras. By now, you have to chose each folder you want to ingest.
 
@@ -13,3 +13,7 @@ There are four folder structures to chose from, created after Lightroom options.
 ### IMPORTANT ###
 
 I take NO RESPONSIBILITY for script malfunction and any file loss due to its use. I myself double check that every file I need was copied to the destination folder when the script runs with no issues - let alone when it returns some kind of error. So I recommend anyone who uses it to do the same.
+
+Known issues:
+1. Copied files update their creation date for the date they were copied. Still working on resolving that.
+

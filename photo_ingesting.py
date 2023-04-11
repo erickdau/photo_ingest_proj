@@ -4,21 +4,28 @@ from tkinter.filedialog import askdirectory
 import exifread
 import datetime
 from folder_structure import folder_struc
+from config_module import Choice
+import tkinter as tk
 
-# Tkinter attempt to unify inputs in one window
 
-
+root = tk.Tk()
+a = Choice(root)
+root.mainloop()
 
 # MAIN SCRIPT
-choice = int(input("Chose the folder structure: \n"
-                   "1. YYYY-MM-DD \n"
-                   "2. MM-DD \n"
-                   "3. YYYY/MM/DD \n"
-                   "4. YYYYMMDD \n"))
+# choice = int(input("Chose the folder structure: \n"
+#                    "1. YYYY-MM-DD \n"
+#                    "2. MM-DD \n"
+#                    "3. YYYY/MM/DD \n"
+#                    "4. YYYYMMDD \n"))
 
-# Asks for origin and destination folders
-origin = askdirectory(title='Select Origin Folder')
-destination = askdirectory(title='Select Destination Folder')
+# # Asks for origin and destination folders
+# origin = askdirectory(title='Select Origin Folder')
+# destination = askdirectory(title='Select Destination Folder')
+
+origin = a.origin
+destination = a.destination
+choice = a.structure
 
 
 def get_exif_date(photo):
@@ -86,3 +93,4 @@ for filename in os.listdir(origin):
             # Copy files from origin to new directory
             shutil.copy(origin + '/' + filename, path + '/' + filename)
             print(f"{path} / {filename} copied")
+
