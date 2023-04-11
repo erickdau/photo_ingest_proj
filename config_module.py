@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import filedialog
 
 
-
 class Choice:
     def __init__(self, master):
         self.master = master
@@ -39,7 +38,3 @@ class Choice:
         self.destination = self.destination_folder.get()
         self.structure = self.struc_selection.get()
         self.master.destroy()
-
-# root = tk.Tk()
-# app = Choice(root)
-# root.mainloop()
